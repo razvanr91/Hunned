@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project by Razvan Roman</title>
+    <title>HUNNED: A Coding Project by Razvan Roman</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,8 +24,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="img/RRLogoWhite.svg"
-                    class="d-inline-block align-text-center" width="30" height="30" alt="Razvan Roman Logo"> App
-                Name</a>
+                    class="d-inline-block align-text-center" width="30" height="30" alt="Razvan Roman Logo"> HUNNED</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link"  href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="app.html">The App</a>
@@ -54,8 +53,43 @@
     </nav>
     <!-- Main Section -->
     <main class="flex-shrink--">
-        <div class="container">
-
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col border-end border-2">
+                    <h1 class="display-6 fw-bold lh-1 mb-3">HUNNED: A coding project</h1>
+                    <h4 class="lead">Go through life one loop at a time. Through Javascript,
+                        we created a project that displays the numbers from 0 to 100.
+                        But, the most awesome this is that all the even numbers
+                        are <strong>BOLDED</strong>. Try it out.
+                    </h4>
+                    <h2 class="mt-5 border-bottom border-2">Instructions</h2>
+                    <p>Enter a starting and a ending value. Press the button and see the magic.</p>
+                </div>
+                <div class="col">
+                    <div>
+                        <h5>Enter values</h5>
+                        <form action="" class="row gy-2 gx-3">
+                            <div class="col">
+                                <input type="number" id="startValue" class="form-control" placeholder="Start Value" min="0"  value="0" aria-label="Start Value">
+                            </div>
+                            <div class="col">
+                                <input type="number" inputmode="endValue" class="form-control" placeholder="End Value" value="100" aria-label="End Value">
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button class="btn btn-lg btn-outline-dark" type="button" id="btnSubmit">HUNNED!</button>
+                            </div>
+                        </form>
+                        <h2 class="mt-5 border-bottom border-2">Results</h2>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-sm">
+                                <tbody id="results">
+                                    <!-- Results go here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Footer Section -->
