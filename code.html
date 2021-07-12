@@ -71,7 +71,7 @@
                             endValue = parseInt(endValue);
 
                             // validate input values
-                            if (Number.isInteger(startValue) && Number.isInteger(endValue)) {
+                            if (Number.isInteger(startValue) && Number.isInteger(endValue)){
                                 // we call generateNumbers
                                 let numbers = generateNumbers(startValue, endValue)
                                 // we call displayNumbers
@@ -122,9 +122,29 @@
                     </code></pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The Code is structured in one function</p>
-                    <h5>Hello World</h5>
-                    <p>Hello World is a function that display an alert with the "Hello World" message</p>
+                    <p>The Code is structured in three function</p>
+                    <h5>Get Values</h5>
+                    <p class="border-bottom border-2">Retrieves the values from the inputs, checks and parses the
+                        values
+                        to integers
+                        so they can be used in the <span class="fw-bold">generateNumbers</span> function.
+                    </p>
+                    <h5>Generate numbers</h5>
+                    <p class="border-bottom border-2">
+                        Using a for loop, we generate a array of numbers from the <span
+                            class="fw-bold">startValue</span> to the
+                        <span class="fw-bold">endValue</span>.
+                    </p>
+                    <h5>Display Numbers</h5>
+                    <p class="border-bottom border-2">
+                        After receiving the array of numbers, we loop through it and check for even numbers.
+                        When we find one, we add a <span class="fw-bold">.even</span> class that makes the number <span
+                            class="fw-bold">bold</span>,
+                        and after that,
+                        we create the template string that we insert to the InnerHtml of the table body with
+                        the id of <span class="fw-bold">#result</span> .
+                        When we find a odd number, we add a <span class="fw-bold">.odd</span> class .
+                    </p>
                 </div>
             </div>
         </div>
