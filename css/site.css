@@ -67,6 +67,14 @@ pre[class*="language-"] {
     word-wrap: break-word;
 }
 
+.even {
+    font-weight: bold;
+}
+
+.odd {
+    font-weight: 100;
+}
+
 main>.container {
     padding: 60px 15px 0;
 }
